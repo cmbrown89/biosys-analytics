@@ -1,0 +1,299 @@
+    1  module load python/3.6.3
+    2  module avail python
+    3  module load python
+    4  module unload python
+    5  module load python/2.6
+    6  module load python/3.6
+    7  virtualenv --system-site-packages ~
+    8  source ~/bin/activate
+    9  nano .bashrc
+   10  pip install pandas
+   11  module purge
+   12  module avail qiime
+   13  module load R; R
+   14  module avail R
+   15  module load R; R
+   16  elgato
+   17  module avail R
+   18  ls
+   19  rm -r first_folder/
+   20  ls
+   21  ls -R R
+   22  ls R/library/
+   23  ls
+   24  pwd
+   25  mkdir first_folder
+   26  ls
+   27  nano first_folder/first_file.txt
+   28  ls
+   29  ls first_folder/
+   30  cat first_folder/first_file.txt 
+   31  module avail R
+   32  module avail dada2
+   33  module list
+   34  module avail qiime
+   35  module avail qiime2
+   36  man mkdir
+   37  mkdir -vp ~/R/library
+   38  ls
+   39  echo 'R_LIBS=~/R/library/' >> ~/.Renviron
+   40  ls
+   41  ls R
+   42  man ls
+   43  ls -R R
+   44  module load R; R
+   45  cd
+   46  ls
+   47  ls -a
+   48  cd .ssh
+   49  ls
+   50  cd /gsfs1/rsgrps/bh_class
+   51  ls
+   52  ls ondemand/
+   53  cd ondemand/data/
+   54  ls
+   55  cd ~
+   56  ls
+   57  ls lib
+   58  ls ~
+   59  ls -a
+   60  ls .ssh
+   61  cat id_dsa.pub
+   62  more id_dsa.pub
+   63  pwd
+   64  cd .ssh
+   65  ls
+   66  cat id_dsa.pub
+   67  cd /gsfs1/rsgrps/bh_class
+   68  cd /rsgrps/bh_class
+   69  ls
+   70  mkdir clairessabrown
+   71  ls
+   72  ls dnlarson/
+   73  ls clairessabrown/
+   74  cd clairessabrown/
+   75  git clone git@github.com:cmbrown89/biosys-analytics.git
+   76  ls
+   77  pwd
+   78  ls biosys-analytics/
+   79  cat biosys-analytics/README.md 
+   80  ls
+   81  ls -a
+   82  history | grep "cd"
+   83  cd /rsgrps/bh_class
+   84  ls
+   85  cd -
+   86  nano .bashrc
+   87  source ~/.bashrc
+   88  class
+   89  cd -
+   90  nano .bashrc
+   91  source ~/.bashrc
+   92  ls
+   93  class
+   94  ls
+   95  cd clairessabrown/
+   96  ls
+   97  cd biosys-analytics/
+   98  ls
+   99  pwd
+  100  nano ~/.bashrc
+  101  class
+  102  bio
+  103  source ~./bashrc
+  104  bio
+  105  nano ~/.bashrc
+  106  cd ~
+  107  source ~/.bashrc
+  108  bio
+  109  whoiam
+  110  w
+  111  man ls
+  112  echo "hello"
+  113  cowsay
+  114  cowsay hello
+  115  env
+  116  echo USER
+  117  echo $USER
+  118  type ssh
+  119  which ssh
+  120  touch foo
+  121  ls
+  122  cat foo
+  123  man find
+  124  man locate
+  125  ls -lht
+  126  echo $HOME
+  127  top
+  128  ps
+  129  ps -fu USER
+  130  ps -fu $USER
+  131  kill 5452
+  132  19975
+  133  df
+  134  du
+  135  bio
+  136  ls
+  137  rm foo
+  138  ls
+  139  git pull upstream master
+  140  cd ..
+  141  ls
+  142  git pull upstream master
+  143  ls -a
+  144  cd ..
+  145  ls
+  146  cd donaldscoon/
+  147  ls -a
+  148  cd ../clairessabrown/
+  149  ls
+  150  ls ../bhurwitz/
+  151  ls -a ../bhurwitz/biosys-analytics/
+  152  ls -a
+  153  pwd
+  154  ls
+  155  rm -rf
+  156  ls
+  157  ls biosys-analytics/
+  158  cd biosys-analytics/
+  159  ls
+  160  rm *
+  161  rm -rf
+  162  ls
+  163  ls 
+  164  ls
+  165  rm 
+  166  rm *
+  167  man rm
+  168  rm -rf *
+  169  ls
+  170  cd ..
+  171  ls
+  172  ls biosys-analytics/
+  173  rm -rf biosys-analytics/
+  174  ls
+  175  clear
+  176  echo $PATH
+  177  bio
+  178  ls
+  179  cd assignments/01-unix/files/
+  180  touch answers.txt
+  181  wget 
+  182  wget -N 
+  183  wget -N https://www.constitution.org/usdeclar.txt
+  184  wget -N https://www.usconstitution.net/const.txt
+  185  ls
+  186  ls -lht
+  187  wc -l *
+  188  wc -l * | sum
+  189  find -size -k 50
+  190  find -size -k 50 *
+  191  bio
+  192  biosys
+  193  cat .bashrc
+  194  bio
+  195  cd /rsgrps/bh_class/clairessabrown/
+  196  pwd
+  197  ls
+  198  cd ~.ssh
+  199  cd /
+  200  cd ~
+  201  cd .ssh
+  202  cat id_rsa.pub 
+  203  cd ../rsgrps/bh_class/clairessabrown/
+  204  cd ..
+  205  cd /rsgrps/bh_class/clairessabrown/
+  206  git clone https://github.com/cmbrown89/biosys-analytics
+  207  ls
+  208  bio
+  209  ls
+  210  git remote add upstream https://github.com/hurwitzlab/biosys-analytics.git
+  211  git pull upstream master
+  212  cd assignments/
+  213  ls
+  214  cat 01-unix | less
+  215  cat 01-unix
+  216  cd 01-unix
+  217  ls
+  218  cat README.md 
+  219  mkdir files
+  220  cd files/
+  221  nano answers.txt 
+  222  cat answers.txt | less
+  223  nano answers.txt 
+  224  man find
+  225  bio
+  226  ls
+  227  cd assignments/01-unix/files/
+  228  ls
+  229  pwd
+  230  find -size 50k
+  231  ls -lht | less
+  232  find -size 40k
+  233  find -size 40k -type f
+  234  find -size 45k -type f
+  235  find -size 40k -type f
+  236  find -size 45k
+  237  find -size +40k
+  238  find -size +50k
+  239  file const.txt 
+  240  ghh
+  241  gh
+  242  ls -l
+  243  ls -lt
+  244  ls -lh
+  245  cat answers.txt 
+  246  nano answers.txt 
+  247  ls -lh
+  248  file const.txt 
+  249  md5sum *
+  250  md5sum *.txt
+  251  df
+  252  man df
+  253  df -k
+  254  man df
+  255  man grep
+  256  grep -c "judge" *
+  257  grep "human" *
+  258  man grep
+  259  grep -H "human" *
+  260  man grep
+  261  grep -l "human" *
+  262  man wc
+  263  ls
+  264  man wget
+  265  wget -O "scarlet.txt" https://www.gutenberg.org/files/25344/25344-0.txt
+  266  ls
+  267  head scarlet.txt | less
+  268  cat scarlet.txt | less
+  269  wc "scarlet" scarlet.txt 
+  270  wc -w "scarlet" scarlet.txt 
+  271  grep -o "scarlet" scarlet.txt > scar_count.txt > wc -l
+  272  grep -o "scarlet" scarlet.txt > scar_count.txt |  wc -l
+  273  grep -o "scarlet" scarlet.txt
+  274  grep -o "scarlet" scarlet.txt > scar_count.txt |  wc -l scarlet.txt 
+  275  grep -o "scarlet" scarlet.txt |  wc -l  
+  276  grep -o "scarlet" scarlet.txt | wc -l
+  277  man car
+  278  man cat
+  279  man cut
+  280  man head
+  281  head -n 15 * | cat > cat.txt 
+  282  ls -lh
+  283  rm scar_count.txt 
+  284  rm wc
+  285  ls -lh
+  286  cat cat.txt | less
+  287  rm cat.txt 
+  288  ls -lh
+  289  head -n 15 * | cat foo
+  290  head -n 15 * | cat > foo
+  291  ls
+  292  ls -lh
+  293  cat foo | less
+  294  wc -l foo 
+  295  cat foo | less
+  296  wc -l foo 
+  297  man cat
+  298  rm foo
+  299  history > cmds

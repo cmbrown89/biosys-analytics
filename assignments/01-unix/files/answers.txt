@@ -1,0 +1,109 @@
+mkdir files
+cd files
+(clairessabrown) [clairessabrown@login2 files]$ touch answe
+rs.txt
+
+wget -N htt
+ps://www.constitution.org/usdeclar.txt
+--2019-01-21 14:00:54--  https://www.constitution.org/usdec
+lar.txt
+Resolving www.constitution.org... 52.52.40.206, 52.52.207.1
+76, 52.52.39.236, ...
+Connecting to www.constitution.org|52.52.40.206|:443... con
+nected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: “usdeclar.txt”
+    [ <=>              ] 8,685       --.-K/s   in 0s      
+2019-01-21 14:00:54 (108 MB/s) - “usdeclar.txt” saved [8685
+]
+(clairessabrown) [clairessabrown@login2 files]$ wget -N htt
+ps://www.usconstitution.net/const.txt
+--2019-01-21 14:01:04--  https://www.usconstitution.net/con
+st.txt
+Resolving www.usconstitution.net... 52.52.214.82
+Connecting to www.usconstitution.net|52.52.214.82|:443... c
+onnected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: “const.txt”
+    [ <=>              ] 45,119      --.-K/s   in 0.04s   
+2019-01-21 14:01:04 (1.05 MB/s) - “const.txt” saved [45119]
+wget -O "scarlet.txt" https://www.gutenberg.org/files/25344/25344-0.txt
+--2019-01-21 19:44:08--  https://www.gutenberg.org/files/25344/25344-0.txt
+Resolving www.gutenberg.org... 152.19.134.47, 2610:28:3090:3000:0:bad:cafe:47
+Connecting to www.gutenberg.org|152.19.134.47|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 525464 (513K) [text/plain]
+Saving to: “scarlet.txt”
+
+100%[====================================>] 525,464      590K/s   in 0.9s    
+
+2019-01-21 19:44:10 (590 KB/s) - “scarlet.txt” saved [525464/525464]
+
+ls -lh
+total 64K
+-rw-r--r-- 1 clairessabrown bh_class 1.1K Jan 21 14:03 answ
+ers.txt
+-rw-r--r-- 1 clairessabrown bh_class  45K Jan 18 11:58 cons
+t.txt
+-rw-r--r-- 1 clairessabrown bh_class 8.5K Jan 18 11:58 usde
+clar.txt
+
+wc -l *
+   41 answers.txt
+  872 const.txt
+  176 usdeclar.txt
+  1089 total
+
+find -size +50k
+
+file const.txt 
+const.txt: ASCII English text
+
+md5sum *.txt
+31d6f40528493add5f433ceb1b7c5181  answers.txt
+f66a8165c621d48bac2216b2f31e8742  const.txt
+7f54939b30ae7b6d45d473a4c82a41b0  usdeclar.txt
+
+df -k
+Filesystem               1K-blocks          Used    Available Use% Mounted on
+/dev/sda2                944785812      33584940    863201796   4% /
+none                      98884376            24     98884352   1% /dev/shm
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs1/rsgrps
+                     1543570980864 1199351463936 344219516928  78% /rsgrps
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs2/pbs
+                       35970351104    6861110272  29109240832  20% /pbs
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs2/Bright_cm_shared
+                       35970351104    6861110272  29109240832  20% /cm/shared
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs1/bio5
+                        4294967296     410201088   3884766208  10% /bio5
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs2/unsupported
+                       35970351104    6861110272  29109240832  20% /unsupporte
+d
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs3/extra
+                      540897443840   47353857024 493543586816   9% /extra
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs3/xdisk
+                       10737418240             0  10737418240   0% /xdisk
+hpc-nfs0-10g.hpc.arizona.edu:/gsfs2/home
+                       35970351104    6861110272  29109240832  20% /home
+
+grep -c "judge" *
+answers.txt:0
+const.txt:1
+usdeclar.txt:1
+
+grep -l "human" *
+usdeclar.txt
+
+grep -o "scarlet" scarlet.txt 
+| wc -l
+108
+
+
+head -n 15 * | cat > foo
+
+wc -l foo 
+67 foo
+
+There are spaces between the file print outs
