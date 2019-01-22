@@ -15,4 +15,4 @@ const.txt:Article 7.
 grep -cv "[A-Za-z0-9].*" const.txt
 170
 
-
+grep "^[aeiouAEIOU]" -o scarlet.txt | sort | uniq -c
