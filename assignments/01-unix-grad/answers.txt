@@ -1,0 +1,18 @@
+
+grep -Eo "c*|s*" const.txt README.md scarlet.txt usdeclar.txt | wc -l
+36626
+(I specified file names because I actually did the first problem third (did 2 and 3 before 1) and output would've included the second and third questions' answers that were added to answers.txt.)
+
+grep "Article\s[0-9]" *
+const.txt:Article 1.
+const.txt:Article 2.
+const.txt:Article 3.
+const.txt:Article 4.
+const.txt:Article 5.
+const.txt:Article 6.
+const.txt:Article 7.
+
+grep -cv "[A-Za-z0-9].*" const.txt
+170
+
+
