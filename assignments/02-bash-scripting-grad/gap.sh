@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#set -u
+set -u
 
 # If there are no arguments, print out all the basenames of the files 
 # in sorted order
@@ -17,7 +17,8 @@ if [[ $# -eq 0 ]]; then
 		i=$((i+1))
 		BASENAME=$(basename $LINE .cc.txt)
  	    printf "    $i $BASENAME\n"
-		done < "$FILES"
+	done < "$FILES"
+	exit # If I don't have this exit, the computer will continue executing and this is why the lists are printed twice
 fi
 
 # If there is an argument, treat it like a regular expression and 
@@ -38,9 +39,9 @@ fi
 
 if [[ $NUM_FILES -gt 1 ]]; then
 	while read -r LINE; do
-	i=$((i+1))
-	BASENAME=$(basename "$LINE" .cc.txt)
-    printf "%4d  %s\n" $i $BASENAME
+		i=$((i+1))
+		BASENAME=$(basename "$LINE" .cc.txt)
+    	printf "%4d  %s\n" $i $BASENAME
 	done < "$FILES"
 fi
 
