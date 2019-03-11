@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 """
 Author : clairessabrown
+<<<<<<< HEAD
 Date   : 2019-03-09
+=======
+Date   : 2019-02-28
+>>>>>>> 19daf43ed8afde3130aa954eb73ac39809fb227f
 Purpose: Rock the Casbah
 """
 
 import argparse
 import sys
+<<<<<<< HEAD
 import os
 import re
 from Bio import SeqIO
 
+=======
+>>>>>>> 19daf43ed8afde3130aa954eb73ac39809fb227f
 
 
 # --------------------------------------------------
@@ -21,6 +28,7 @@ def get_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument(
+<<<<<<< HEAD
         'fasta', metavar='FASTA', help='str', nargs='+')
 
     parser.add_argument(
@@ -42,6 +50,28 @@ def get_args():
 
     #parser.add_argument(
     #    '-f', '--flag', help='A boolean flag', action='store_true')
+=======
+        'positional', metavar='str', help='A positional argument')
+
+    parser.add_argument(
+        '-a',
+        '--arg',
+        help='A named string argument',
+        metavar='str',
+        type=str,
+        default='')
+
+    parser.add_argument(
+        '-i',
+        '--int',
+        help='A named integer argument',
+        metavar='int',
+        type=int,
+        default=0)
+
+    parser.add_argument(
+        '-f', '--flag', help='A boolean flag', action='store_true')
+>>>>>>> 19daf43ed8afde3130aa954eb73ac39809fb227f
 
     return parser.parse_args()
 
@@ -61,6 +91,7 @@ def die(msg='Something bad happened'):
 
 # --------------------------------------------------
 def main():
+<<<<<<< HEAD
     """
     What do I need to do:
     >> Sort files by whether their GC content is considered high or low
@@ -125,11 +156,25 @@ def main():
         #files_dict[file] = int(100 * (g_pct + c_pct))
      
     #print(files_dict)
+=======
+    """Make a jazz noise here"""
+    args = get_args()
+    str_arg = args.arg
+    int_arg = args.int
+    flag_arg = args.flag
+    pos_arg = args.positional
+
+    print('str_arg = "{}"'.format(str_arg))
+    print('int_arg = "{}"'.format(int_arg))
+    print('flag_arg = "{}"'.format(flag_arg))
+    print('positional = "{}"'.format(pos_arg))
+>>>>>>> 19daf43ed8afde3130aa954eb73ac39809fb227f
 
 
 # --------------------------------------------------
 if __name__ == '__main__':
     main()
+<<<<<<< HEAD
 
 
 #>>> people
@@ -151,3 +196,5 @@ if __name__ == '__main__':
 
 
 
+=======
+>>>>>>> 19daf43ed8afde3130aa954eb73ac39809fb227f
