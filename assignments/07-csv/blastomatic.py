@@ -80,10 +80,13 @@ def main():
     #die(dict(anno_dict))
 
     # Searching anno_dict for seqID, keep in mind it may not be there
+<<<<<<< HEAD
     # Don't put blast in dictionary 
 
    open(outfile, "wb") 
    #write header here)
+=======
+>>>>>>> 4553067f5eac63d7cfa3c33e0d94386ee41878e6
 
     with open(blast) as f:
         fieldnames = "qseqid,seq_id,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore".split(",")
@@ -93,6 +96,7 @@ def main():
             if seqID in anno_dict:
                 genus = anno_dict.get(seqID).get("genus") or "NA"
                 species = anno_dict.get(seqID).get("species") or "NA"
+<<<<<<< HEAD
                 #print(row["seq_id"], row["pident"], genus, species, file=sys.stdout)
                 blah = row["seq_id"], row["pident"], genus, species
                 
@@ -105,6 +109,12 @@ def main():
 
     # close file here
 
+=======
+                print(row["seq_id"], row["pident"], genus, species, file=sys.stdout)
+            else:
+                print("Cannot find seq \"{}\" in lookup".format(seqID), file=sys.stderr)
+
+>>>>>>> 4553067f5eac63d7cfa3c33e0d94386ee41878e6
 
     # To do: Print found output to standard out, non-found to standard error
     # To do: Get header in output file
@@ -113,12 +123,19 @@ def main():
 
 
 
+<<<<<<< HEAD
 # with open(outfile,'wb') as fou:
 #     dw = csv.DictWriter(fou, delimiter='\t', fieldnames=ordered_fieldnames)
 #     dw.writeheader()
 
+=======
+>>>>>>> 4553067f5eac63d7cfa3c33e0d94386ee41878e6
 
    
 # --------------------------------------------------
 if __name__ == '__main__':
     main()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4553067f5eac63d7cfa3c33e0d94386ee41878e6

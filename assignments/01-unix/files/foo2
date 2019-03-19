@@ -1,0 +1,101 @@
+==> answers.txt <==
+mkdir files
+cd files
+(clairessabrown) [clairessabrown@login2 files]$ touch answe
+rs.txt
+
+wget -N htt
+ps://www.constitution.org/usdeclar.txt
+--2019-01-21 14:00:54--  https://www.constitution.org/usdec
+lar.txt
+Resolving www.constitution.org... 52.52.40.206, 52.52.207.1
+76, 52.52.39.236, ...
+Connecting to www.constitution.org|52.52.40.206|:443... con
+nected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+
+==> cmds <==
+    1  module load python/3.6.3
+    2  module avail python
+    3  module load python
+    4  module unload python
+    5  module load python/2.6
+    6  module load python/3.6
+    7  virtualenv --system-site-packages ~
+    8  source ~/bin/activate
+    9  nano .bashrc
+   10  pip install pandas
+   11  module purge
+   12  module avail qiime
+   13  module load R; R
+   14  module avail R
+   15  module load R; R
+
+==> const.txt <==
+Provided by USConstitution.net
+------------------------------
+
+[Note: Repealed text is not noted in this version.  Spelling errors have been
+corrected in this version.  For an uncorrected, annotated version of the
+Constitution, visit http://www.usconstitution.net/const.html ]
+
+We the People of the United States, in Order to form a more perfect Union,
+establish Justice, insure domestic Tranquility, provide for the common
+defence, promote the general Welfare, and secure the Blessings of Liberty to
+ourselves and our Posterity, do ordain and establish this Constitution for the
+United States of America.
+
+Article 1.
+
+
+==> foo <==
+==> answers.txt <==
+mkdir files
+cd files
+(clairessabrown) [clairessabrown@login2 files]$ touch answe
+rs.txt
+
+wget -N htt
+ps://www.constitution.org/usdeclar.txt
+--2019-01-21 14:00:54--  https://www.constitution.org/usdec
+lar.txt
+Resolving www.constitution.org... 52.52.40.206, 52.52.207.1
+76, 52.52.39.236, ...
+Connecting to www.constitution.org|52.52.40.206|:443... con
+nected.
+HTTP request sent, awaiting response... 200 OK
+
+==> scarlet.txt <==
+﻿The Project Gutenberg EBook of The Scarlet Letter, by Nathaniel Hawthorne
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.net
+
+
+Title: The Scarlet Letter
+
+Author: Nathaniel Hawthorne
+
+Illustrator: Mary Hallock Foote
+             L. S. Ipsen
+
+
+==> usdeclar.txt <==
+                      Declaration of Independence
+
+                   [Adopted in Congress 4 July 1776]
+
+
+
+   The Unanimous Declaration of the Thirteen United States of America
+
+When, in the course of human events, it becomes necessary for one people to 
+dissolve the political bands which have connected them with another, and to 
+assume among the powers of the earth, the separate and equal station to 
+which the laws of nature and of nature's God entitle them, a decent respect 
+to the opinions of mankind requires that they should declare the causes 
+which impel them to the separation.
+

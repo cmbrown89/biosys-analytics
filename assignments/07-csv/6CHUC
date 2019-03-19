@@ -1,0 +1,4 @@
+  File "./blastomatic.py", line 69
+    print("\"{}\"" is not a file".format(file))
+                               ^
+SyntaxError: invalid syntax
