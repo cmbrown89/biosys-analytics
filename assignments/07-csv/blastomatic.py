@@ -82,7 +82,7 @@ def main():
     # Searching anno_dict for seqID, keep in mind it may not be there
     # Don't put blast in dictionary 
 
-   open(outfile, "wb") 
+   #open(outfile, "wb") if len(outfile) == 1
    #write header here)
 
     with open(blast) as f:
